@@ -1,6 +1,6 @@
 # ALG1_projekt_mar0897
 
-##Spuštění\
+##Spuštění
 $ cmake .\
 $ make\
 $ ./main [cesta-ke-souboru-s-grafem]
