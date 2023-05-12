@@ -3,6 +3,7 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <unordered_map>
 
 class Graph{
 public: 
@@ -20,6 +21,7 @@ public:
     int coef_d = 0;                                 ///<GCC denominator
 public:
     Graph(const std::string &input_path);
+    int get_or_create_vertex(std::unordered_map<int, int> &vertex_map, int val);
     void get_largest_component();
     void get_coefficient();
     void print();
